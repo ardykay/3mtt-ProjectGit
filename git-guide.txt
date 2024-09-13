@@ -1,0 +1,98 @@
+Step 1: Install Git
+If you haven't installed Git yet, follow these steps:
+
+Windows: Download Git from git-scm.com and follow the setup wizard.
+macOS: You can install Git using Homebrew:
+bash
+Copy code
+brew install git
+Linux: Use your distribution's package manager. For Ubuntu/Debian, run:
+bash
+Copy code
+sudo apt install git
+Step 2: Create a GitHub Account
+If you don’t have a GitHub account yet, create one at GitHub.com.
+
+Step 3: Create a New Repository on GitHub
+Go to GitHub and log in.
+Click on the green New button on the right side of your dashboard.
+Fill in the repository details:
+Repository Name: The name of your project.
+Description: (Optional) Add a short description of your project.
+Privacy: Choose if your repository should be Public or Private.
+Click Create repository.
+Step 4: Initialize Git in Your Project
+Open a Terminal/Command Prompt and navigate to your project directory:
+bash
+Copy code
+cd /path/to/your/project
+Initialize a Git repository:
+bash
+Copy code
+git init
+This will create a hidden .git folder in your project directory, which tracks changes.
+Step 5: Add Remote Origin
+Connect your local repository to the GitHub repository:
+
+Copy the repository URL from GitHub (you can find this by clicking on the Code button in your newly created repository).
+In your terminal, add the remote URL:
+bash
+Copy code
+git remote add origin https://github.com/yourusername/your-repository.git
+Step 6: Add Files to the Staging Area
+Add the files in your project to the Git staging area:
+
+bash
+Copy code
+git add .
+This command stages all changes in your project folder. If you want to stage specific files, use:
+
+bash
+Copy code
+git add filename
+Step 7: Commit Changes
+Commit your changes with a meaningful message:
+
+bash
+Copy code
+git commit -m "Initial commit"
+This step creates a snapshot of your changes. Be sure to write meaningful messages, as it helps you and others understand what changes were made.
+
+Step 8: Push to GitHub
+Push your local commits to the GitHub repository:
+
+Push the commits to the master (or main) branch:
+bash
+Copy code
+git push origin master
+Or, if your repository is using the main branch:
+bash
+Copy code
+git push origin main
+If this is your first time pushing, Git will ask for your GitHub credentials. Enter your username and personal access token (you can create a token in GitHub under Settings > Developer Settings > Personal Access Tokens).
+Step 9: Verify on GitHub
+Go to your GitHub repository and refresh the page. You should now see all the files you committed.
+
+Optional: Set Up Default Branch
+If your repository uses main as the default branch (GitHub defaults to this in newer repositories), make sure to push to the correct branch:
+
+bash
+Copy code
+git push -u origin main
+Step 10: Continue Making Changes
+For any future changes:
+
+Modify your files.
+Stage the changes using:
+bash
+Copy code
+git add .
+Commit the changes:
+bash
+Copy code
+git commit -m "Descriptive message about what was changed"
+Push to GitHub:
+bash
+Copy code
+git push
+Now your repository is on GitHub, and you can keep updating it by repeating steps 6–8 for future commits!
