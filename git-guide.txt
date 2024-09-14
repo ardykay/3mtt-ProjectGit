@@ -90,7 +90,54 @@ git add .
 Commit the changes:
 bash
 Copy code
+git commit -m "Descriptive message about what was changedCommit your changes with a meaningful message:
+
+bash
+Copy code
+git commit -m "Initial commit"
+This step creates a snapshot of your changes. Be sure to write meaningful messages, as it helps you and others understand what changes were made.
+
+Step 8: Push to GitHub
+Push your local commits to the GitHub repository:
+
+Push the commits to the master (or main) branch:
+bash
+Copy code
+git push origin master
+Or, if your repository is using the main branch:
+bash
+Copy code
+git push origin main
+If this is your first time pushing, Git will ask for your GitHub credentials. Enter your username and personal access token (you can create a token in GitHub under Settings > Developer Settings > Personal Access Tokens).
+Step 9: Verify on GitHub
+Go to your GitHub repository and refresh the page. You should now see all the files you committed.
+
+Optional: Set Up Default Branch
+If your repository uses main as the default branch (GitHub defaults to this in newer repositories), make sure to push to the correct branch:
+
+bash
+Copy code
+git push -u origin main
+Step 10: Continue Making Changes
+For any future changes:
+
+Modify your files.
+Stage the changes using:
+bash
+Copy code
+git add .
+Commit the changes:
+bash
+Copy code
 git commit -m "Descriptive message about what was changed"
+Push to GitHub:
+bash
+Copy code
+git push
+Now your repository is on GitHub, and you can keep updating it by repeating steps 6–8 for future commits!
+git-guide.txt [unix] (22:50 13/09/2024)                                                                                                                               93,58 Bot
+-- INSERT --
+"
 Push to GitHub:
 bash
 Copy code
